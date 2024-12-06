@@ -4,28 +4,69 @@
         <meta charset="UTF-8">
         <title>Superheroes</title>
         <style>
-            img
-            {
-                height: 100px;
+            /* General Styling */
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                background-color: #f4f4f9;
             }
-            td, th
-            {
-                border: 2px solid black;
-                padding: 15px;
-                
+
+            h1 {
+                text-align: center;
+                font-size: 2em;
+                color: #333;
             }
-            table
-            {
+
+            table {
+                width: 100%;
+                margin: 20px auto;
                 border-collapse: collapse;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             }
-            th
-            {
-                background-color: gray;
+
+            th, td {
+                padding: 15px;
+                text-align: center;
+                border: 2px solid #ddd;
+            }
+
+            th {
+                background-color: #333;
+                color: white;
                 font-size: 18px;
-          </style>
+            }
+
+            td {
+                background-color: #fff;
+            }
+
+            /* Image Styling */
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+
+            /* Hover Effect */
+            tr:hover {
+                background-color: #f1f1f1;
+            }
+
+            /* List Styling */
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            li {
+                margin-bottom: 5px;
+            }
+        </style>
     </head>
     <body>
-       <h1>My Superheros</h1> 
+       <h1>My Superheroes</h1> 
         <table>
         <thead>
             <tr>
@@ -36,79 +77,93 @@
                 <th>Weakness</th>
             </tr>
         </thead>
-      <tbody>
-        <tr>
-          <td>Peter Parker</td>
-          <td>Spider-Man</td>
-           <td><a href="images/spider-man.jpg"><img src="images/spider-man.jpg" alt="Spider-man Pic"></a></td>
-           <td>
-                        <ul>
-                            <li>Shoots webs</li>
-                            <li>Web slings</li>
-                            <li>Climbs walls</li>
-                        </ul>
-                    </td>
-                    <td>
-                       <ul>
+        <tbody>
+            <!-- First Hero -->
+            <tr>
+                <td>Peter Parker</td>
+                <td>Spider-Man</td>
+                <td><a href="images/spider-man.jpg"><img src="images/spider-man.jpg" alt="Spider-Man"></a></td>
+                <td>
+                    <ul>
+                        <li>Shoots webs</li>
+                        <li>Web slings</li>
+                        <li>Climbs walls</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
                         <li>Bullets</li>
                         <li>Water</li>
-                        <li>Posion</li>
-                       </ul>
-                    </td>  
-             <td>Wade Wilson</td>
-          <td>Deadpool</td>
-           <td><a href="images/Deadpool.webp"><img src="images/Deadpool.webp" alt="Deadpool Pic"></a></td>
-           <td>
-                        <ul>
-                            <li>inmortal</li>
-                            <li>Weapons Expert</li>
-                            <li>superhuman agility</li>
-                        </ul>
-                    </td>
-                    <td>
-                       <ul>
-                        <li>Mental State</li>
+                        <li>Poisons</li>
+                    </ul>
+                </td>  
+            </tr>
+
+            <!-- Second Hero -->
+            <tr>
+                <td>Wade Wilson</td>
+                <td>Deadpool</td>
+                <td><a href="images/Deadpool.webp"><img src="images/Deadpool.webp" alt="Deadpool"></a></td>
+                <td>
+                    <ul>
+                        <li>Immortal</li>
+                        <li>Weapons Expert</li>
+                        <li>Superhuman Agility</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Mental instability</li>
                         <li>No super strength</li>
-                       </ul>
-                    </td>   
-            <td>Bruce Banner</td>
-          <td>Hulk</td>
-           <td><a href="images/Hulk.png"><img src="images/Hulk.png" alt="Hulk Pic"></a></td>
-           <td>
-                        <ul>
-                            <li>Super strength</li>
-                            <li>Can change into human from and vice versa</li>
-                            <li>Hard to beat</li>
-                        </ul>
-                    </td>
-                    <td>
-                       <ul>
-                        <li>Sometimes his thougths</li>
-                        <li>Wolverine</li>
-                        <li>Iron-man Hulk suit</li>
-                       </ul>
-                    </td>  
-            <td>Frank Castle</td>
-          <td>Punihser</td>
-           <td><a href="images/punisher.jpeg"><img src="images/punisher.jpeg" alt="Punisher Pic"></a></td>
-           <td>
-                        <ul>
-                            <li>High pain tolerance</li>
-                            <li>Weapons Expert</li>
-                            <li>Endurance</li>
-                        </ul>
-                    </td>
-                    <td>
-                       <ul>
-                        <li>can be killed</li>
-                        <li>not a superhuman</li>
-                       </ul>
-                    </td>  
-           </tr>
-            </tbody>
+                    </ul>
+                </td>   
+            </tr>
+
+            <!-- Third Hero -->
+            <tr>
+                <td>Bruce Banner</td>
+                <td>Hulk</td>
+                <td><a href="images/Hulk.png"><img src="images/Hulk.png" alt="Hulk"></a></td>
+                <td>
+                    <ul>
+                        <li>Super Strength</li>
+                        <li>Transforms between human and Hulk</li>
+                        <li>Hard to beat</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Difficulty controlling anger</li>
+                        <li>Vulnerable to stronger opponents like Wolverine</li>
+                        <li>Hulkbuster Suit</li>
+                    </ul>
+                </td>  
+            </tr>
+
+            <!-- Fourth Hero -->
+            <tr>
+                <td>Frank Castle</td>
+                <td>Punisher</td>
+                <td><a href="images/punisher.jpeg"><img src="images/punisher.jpeg" alt="Punisher"></a></td>
+                <td>
+                    <ul>
+                        <li>High pain tolerance</li>
+                        <li>Weapons Expert</li>
+                        <li>Endurance</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Can be killed</li>
+                        <li>Not superhuman</li>
+                    </ul>
+                </td>  
+            </tr>
+        </tbody>
         </table> 
     </body>
 </html>
+
             
   
     
